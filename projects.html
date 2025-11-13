@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Eurats Digitals</title>
+
+  <!-- Internal CSS -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      color: #fff;
+      background: #111;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(17, 17, 17, 0.95);
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .nav-links a.active {
+      border-bottom: 2px solid #FFD700;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 6rem 2rem 2rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .projects h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: hwb(50 93% 5%);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Cards */
+    .card {
+      background: #1a1a1a;
+      padding: 1rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img,
+    .card video {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      text-align: center;
+      margin-top: 0.75rem;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+    }
+
+    video {
+      max-height: 500px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      margin-top: 2rem;
+      border-top: 1px solid #222;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav>
+      <h1 class="logo">Digital Eurats</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2>Portfolio Projects</h2>
+    <div class="grid">
+
+      <!-- Video Project 1 -->
+      <div class="card">
+        <video controls muted>
+          <source src="Culture Club x Ultra 2025.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Ultra Music Festival</h3>
+      </div>
+
+      <!-- Video Project 2 -->
+      <div class="card">
+        <video controls muted>
+          <source src="DN8 Final.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Nike DN8 Event</h3>
+      </div>
+
+      <!-- Image Projects -->
+      <div class="card">
+        <img src="DSC00148.jpg" alt="Project 3">
+        <h3>JAZZ in the lights</h3>
+      </div>
+
+      <div class="card">
+        <img src="DSC05758.jpg" alt="Project 4">
+        <h3>Spotify</h3>
+      </div>
+
+      <div class="card">
+        <img src="DSC08623.jpg" alt="Project 5">
+        <h3>Pexel</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Digital EuratsS | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

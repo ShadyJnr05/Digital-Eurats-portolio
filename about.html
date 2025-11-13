@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Eurats Digitals</title>
+
+  <!-- Internal CSS -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      color: #fff;
+      background: #111;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(17, 17, 17, 0.95);
+      z-index: 100;
+    }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem; }
+    .nav-links { list-style: none; display: flex; gap: 1.5rem; }
+    .nav-links a { color: #fff; text-decoration: none; font-weight: 600; }
+    .nav-links a.active { border-bottom: 2px solid #FFD700; }
+
+    /* Sections */
+    section {
+      padding: 6rem 2rem 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* About Eurats Digitals */
+    .about-company h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: hsl(0, 0%, 100%);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .about-company p {
+      color: #ccc;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    /* About Founder */
+    .founder {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 3rem 2rem;
+      margin-top: 2rem;
+    }
+    .founder h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #00BFFF; /* contrasting blue for the founder section */
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    .founder img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      border: 3px solid #00BFFF;
+    }
+    .founder p {
+      color: #ccc;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .achievements {
+      margin-top: 1rem;
+      color: hsl(53, 19%, 92%);
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      margin-top: 2rem;
+      border-top: 1px solid #222;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav>
+      <h1 class="logo">Digital Eurats</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Eurats Digitals -->
+  <section class="about-company">
+    <h2>About Eurats Digitals</h2>
+    <p>Eurats Digitals is a creative studio specializing in digital content, photography, and storytelling. 
+    We believe in creating visuals that not only capture attention but also communicate emotion and meaning. 
+    From branding to film direction, we blend innovation and artistry to help clients express their vision authentically.</p>
+  </section>
+
+  <!-- About the Founder -->
+  <section class="founder">
+    <img src="Screenshot 2025-11-13 215609.png" alt="Founder Photo">
+    <h2>About the Founder</h2>
+    <p>Hi, I’m Digital Eurats — .</p>
+
+    <p class="achievements">Achievements:</p>
+    <p>worked with The wealthiest man in the world known as Modau Mulisa</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Digital Eurats | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
